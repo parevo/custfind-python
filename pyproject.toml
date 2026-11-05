@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "custfind"
+version = "1.0.0"
+description = "Official Python client for the Custfind API: lead searches, email outreach, CRM and webhooks."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["custfind", "leads", "lead-generation", "api", "sdk"]
+
+[project.urls]
+Documentation = "https://custfind.com/developers"
+
+[tool.setuptools]
+packages = ["custfind"]
