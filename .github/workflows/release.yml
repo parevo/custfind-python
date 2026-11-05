@@ -43,6 +43,9 @@ jobs:
           name: dist
           path: dist/
       - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          # A version already on PyPI (published by hand) is not an error.
+          skip-existing: true
       - run: gh release create "$GITHUB_REF_NAME" --generate-notes --verify-tag --repo "$GITHUB_REPOSITORY"
         env:
           GH_TOKEN: ${{ github.token }}
