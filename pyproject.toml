@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "custfind"
-version = "1.0.0"
+version = "1.1.0"
 description = "Official Python client for the Custfind API: lead searches, email outreach, CRM and webhooks."
 readme = "README.md"
 license = { text = "MIT" }
@@ -14,6 +14,8 @@ keywords = ["custfind", "leads", "lead-generation", "api", "sdk"]
 
 [project.urls]
 Documentation = "https://custfind.com/developers"
+Source = "https://github.com/parevo/custfind-python"
+Issues = "https://github.com/parevo/custfind-python/issues"
 
 [tool.setuptools]
 packages = ["custfind"]
